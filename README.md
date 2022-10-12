@@ -1,5 +1,3 @@
-# First Repository
+# Spring & Hibernate for Beginners (includes Spring Boot)
 
-An exercise about creating repositories on GitHub.
-No defined purpose for the repository yet.
-Maybe a for a Java Spring project or a Mobile application on Flutter, Kotlin, or a Pyton application to learn to implement AI.
+https://www.udemy.com/course/spring-hibernate-tutorial/
