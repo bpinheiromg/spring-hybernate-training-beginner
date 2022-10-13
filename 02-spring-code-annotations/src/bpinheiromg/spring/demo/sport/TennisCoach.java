@@ -11,8 +11,13 @@ public class TennisCoach implements Coach {
 
 	FortuneService fortuneService;
 	
+//	@Autowired
+//	public TennisCoach(@Qualifier("doomFortuneService") FortuneService fortuneService) {
+//		this.fortuneService = fortuneService;
+//	}
+	
 	@Autowired
-	public TennisCoach(@Qualifier("doomFortuneService") FortuneService fortuneService) {
+	public void setFortuneService(@Qualifier("happyFortuneService") FortuneService fortuneService) {
 		this.fortuneService = fortuneService;
 	}
 
@@ -20,7 +25,7 @@ public class TennisCoach implements Coach {
 	public String getDailyWorkout() {
 		return "Practice backhand volley one thousand times.";
 	}
-	
+
 	@Override
 	public String getFortune() {
 		return fortuneService.getFortune();
