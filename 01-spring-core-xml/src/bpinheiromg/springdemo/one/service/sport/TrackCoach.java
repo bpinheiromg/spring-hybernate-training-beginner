@@ -5,7 +5,7 @@ import bpinheiromg.springdemo.one.service.fortune.FortuneService;
 public class TrackCoach implements Coach {
 
 	private FortuneService fortuneService;
-	
+
 	public TrackCoach(FortuneService fortuneService) {
 		this.fortuneService = fortuneService;
 	}
