@@ -1,0 +1,5 @@
+*.class
+01-spring-core-xml\bin\*
+02-spring-code-annotations\bin\*
+build
+resources.c
