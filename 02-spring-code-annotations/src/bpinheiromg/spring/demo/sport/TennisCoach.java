@@ -9,6 +9,8 @@ import bpinheiromg.spring.demo.fortune.FortuneService;
 @Component
 public class TennisCoach implements Coach {
 
+	@Autowired
+	@Qualifier("fileFortuneService")
 	FortuneService fortuneService;
 	
 //	@Autowired
@@ -16,10 +18,10 @@ public class TennisCoach implements Coach {
 //		this.fortuneService = fortuneService;
 //	}
 	
-	@Autowired
-	public void setFortuneService(@Qualifier("happyFortuneService") FortuneService fortuneService) {
-		this.fortuneService = fortuneService;
-	}
+//	@Autowired
+//	public void setFortuneService(@Qualifier("happyFortuneService") FortuneService fortuneService) {
+//		this.fortuneService = fortuneService;
+//	}
 
 	@Override
 	public String getDailyWorkout() {
