@@ -3,6 +3,8 @@ package bpinheiromg.spring.demo.fortune;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
@@ -33,7 +35,9 @@ public class FileFortuneService implements FortuneService {
 			try {
 				fortuneList = Files.readAllLines(Paths.get("./resources/fortune.txt"));
 			} catch (IOException e) {
-				e.printStackTrace();
+				fortuneList = new ArrayList<>(Arrays.asList("No luck for you today."));
+				System.err.println("Error retriving fortune file : "+e.getMessage());	
+				
 			}
 		}
 	}
