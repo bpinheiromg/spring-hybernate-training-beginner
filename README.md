@@ -14,3 +14,6 @@ https://www.udemy.com/course/spring-hibernate-tutorial/
 This project depends on the '*01-spring-core-xml*' lib folder.
 * Section 7: Spring Configuration with Java Annotations - Inversion of Control
 * Section 8: Spring Configuration with Java Annotations - Dependency Injection
+* Section 9: Spring Configuration with Java Annotations - Bean Scopes and Lifecycle Methods
+* Section 10: Spring Configuration with Java Code (no xml)
+* Section 11: Spring MVC - Building Spring Web Apps
