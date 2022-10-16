@@ -14,7 +14,6 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class FileFortuneService implements FortuneService {
-	
 
 	private List<String> fortuneList;
 	
@@ -36,27 +35,8 @@ public class FileFortuneService implements FortuneService {
 				fortuneList = Files.readAllLines(Paths.get("./resources/fortune.txt"));
 			} catch (IOException e) {
 				fortuneList = new ArrayList<>(Arrays.asList("No luck for you today."));
-				System.err.println("Error retriving fortune file : "+e.getMessage());	
-				
+				System.err.println("Error retriving fortune file : "+e.getMessage());
 			}
 		}
 	}
-
-	
-//	@Value("${fortune.01}")
-//	private String fortune01;
-//	
-//	@Value("${fortune.02}")
-//	private String fortune02;
-//	
-//	@Value("${fortune.03}")
-//	private String fortune03;
-//
-//	public String getFortune() {
-//		if (fortune==null) 
-//			fortune = new ArrayList<>(Arrays.asList(fortune01,fortune02,fortune03));
-//		
-//		return fortune.get(rand.nextInt(fortune.size()));
-//	}
-
 }

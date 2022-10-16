@@ -4,7 +4,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import bpinheiromg.spring.demo.sport.Coach;
 
-public class MyApp {
+public class MyAppXmlConfig {
 	
 	public static void main(String[] args) {
 		
