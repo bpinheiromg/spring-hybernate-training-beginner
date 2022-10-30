@@ -21,3 +21,4 @@ https://www.udemy.com/course/spring-hibernate-tutorial/
 ## Project '03-spring-mvc-basic-xml*' content:
 *This project Require Tomcat9 configured with Eclipse or STS4.*
 * Section 11: Spring MVC - Building Spring Web Apps
+* Section 12: Spring MVC - Creating Controllers and Views
