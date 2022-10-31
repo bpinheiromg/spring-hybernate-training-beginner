@@ -1,4 +1,4 @@
-package bpinheiromg.spring.demo.mvc;
+package bpinheiromg.spring.demo.mvc.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
