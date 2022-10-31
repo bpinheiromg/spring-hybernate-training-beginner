@@ -6,6 +6,8 @@
 	<body>
 		Student name: ${student.firstName} ${student.lastName}
 		<br><br>
+		Student country: ${student.country}
+		<br><br>
 		<a href="./form">back to form</a>
 	</body>
 </html>
