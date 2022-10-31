@@ -4,7 +4,7 @@
 		<title>Result Form Version 1</title>
 	</head>
 	<body>
-		Student name Submited: ${param.studentName}
+		Student name: ${name}
 		<br><br>
 		<a href="./form">Back to form</a>
 	</body>
