@@ -12,7 +12,7 @@ public class FormControllerV3_paramBinding {
 	
 	@RequestMapping("/form")
 	public String showForm() {
-		return "form-v3";
+		return "v3-form";
 	}	 
 	
 	@RequestMapping("/processForm")
@@ -23,6 +23,6 @@ public class FormControllerV3_paramBinding {
 		String nameConverted = StringUtils.hasText(studName) ? studName.toUpperCase() : "Not Informed";
 		model.addAttribute("name",nameConverted);
 		
-		return "form-process-v3";
+		return "v3-form-process";
 	}
 }

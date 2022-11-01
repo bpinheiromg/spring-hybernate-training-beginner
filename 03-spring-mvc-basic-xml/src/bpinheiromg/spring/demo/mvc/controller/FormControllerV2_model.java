@@ -13,7 +13,7 @@ public class FormControllerV2_model {
 	
 	@RequestMapping("/form")
 	public String showForm() {
-		return "form-v2";
+		return "v2-form";
 	}	
 	
 	@RequestMapping("/processForm")
@@ -23,6 +23,6 @@ public class FormControllerV2_model {
 		String nameConverted = StringUtils.hasText(nameParam) ? nameParam.toUpperCase() : "Not Informed";
 		model.addAttribute("name",nameConverted);
 		
-		return "form-process-v2";
+		return "v2-form-process";
 	}
 }

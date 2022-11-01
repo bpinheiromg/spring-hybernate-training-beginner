@@ -9,11 +9,11 @@ public class FormControllerV1_basic {
 	
 	@RequestMapping("/form")
 	public String showForm() {
-		return "form-v1";
+		return "v1-form";
 	}	
 	
 	@RequestMapping("/processForm")
 	public String processForm() {
-		return "form-process-v1";
+		return "v1-form-process";
 	}
 }

@@ -12,10 +12,11 @@
 			<br><br>
 			Country: 
 			<form:select path="country">
-				<form:options items="${student.countryOptions}"/>
+				<form:options items="${fileCountryOptions}"/>
 			</form:select>
 			<br><br>
 			<input type="submit" />
 		</form:form>
+		<a href="../../">back to main-menu</a>
 	</body>
 </html>
