@@ -6,6 +6,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
+import bpinheiromg.spring.demo.mvc.validation.CourseCode;
+
 public class V6CustomerValidationModel {
 	
 	private String firstName;
@@ -21,6 +23,10 @@ public class V6CustomerValidationModel {
 
 	@Pattern(regexp="^[a-zA-Z0-9]{5}", message="only 5 characters/digits")
 	private String postalCode;
+	
+	@Pattern(regexp="^[a-zA-Z0-9]{8}", message="only 8 characters/digits")
+	@CourseCode
+	private String courseCode;
 
 	public String getFirstName() {
 		return firstName;
@@ -45,5 +51,11 @@ public class V6CustomerValidationModel {
 	}
 	public void setPostalCode(String postalCode) {
 		this.postalCode = postalCode;
+	}
+	public String getCourseCode() {
+		return courseCode;
+	}
+	public void setCourseCode(String courseCode) {
+		this.courseCode = courseCode;
 	}
 }

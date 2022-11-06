@@ -11,6 +11,8 @@
 		<br><br>
 		Customer Postal Code: ${customer.postalCode}
 		<br><br>
+		Customer Course Code: ${customer.courseCode}
+		<br><br>
 		<a href="./form">back to form</a><br>
 		<a href="../../">back to main-menu</a>
 	</body>
