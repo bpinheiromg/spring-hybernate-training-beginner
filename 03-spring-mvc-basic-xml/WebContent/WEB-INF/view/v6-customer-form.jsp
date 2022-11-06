@@ -14,6 +14,9 @@
 			Last Name*: <form:input path="lastName"  />
 			<form:errors path="lastName" cssClass="error" />
 			<br><br>
+			Age (years): <form:input path="age"  />
+			<form:errors path="age" cssClass="error" />
+			<br><br>
 			<input type="submit" />
 		</form:form>
 		<a href="../../">back to main-menu</a>
