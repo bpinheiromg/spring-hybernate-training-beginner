@@ -22,6 +22,9 @@
 			Preferred Operating System: 
 			<form:radiobuttons path="preferredOS" items="${fileOperatingSystems}"/>
 			<br><br>
+			Programming Languages: 
+			<form:checkboxes path="programmingLanguages" items="${fileProgrammingLanguages}"/>
+			<br><br>
 			<input type="submit" />
 		</form:form>
 		<a href="../../">back to main-menu</a>
