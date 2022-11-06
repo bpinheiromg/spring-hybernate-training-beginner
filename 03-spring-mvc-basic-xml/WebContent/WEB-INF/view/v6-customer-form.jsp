@@ -14,7 +14,7 @@
 			Last Name*: <form:input path="lastName"  />
 			<form:errors path="lastName" cssClass="error" />
 			<br><br>
-			Age (years): <form:input path="age"  />
+			Age (years)*: <form:input path="age"  />
 			<form:errors path="age" cssClass="error" />
 			<br><br>
 			Postal Code: <form:input path="postalCode"  />

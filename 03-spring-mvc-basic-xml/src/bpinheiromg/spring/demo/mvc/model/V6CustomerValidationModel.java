@@ -14,9 +14,10 @@ public class V6CustomerValidationModel {
 	@Size(min=1, message="is required")
 	private String lastName;
 	
+	@NotNull(message="is required")
 	@Min(value=4, message="Must be at least 4 years old to play with Legos")
 	@Max(value=99, message="Must be no older than 99 years to play with Legos")
-	private int age;
+	private Integer age;
 
 	@Pattern(regexp="^[a-zA-Z0-9]{5}", message="only 5 characters/digits")
 	private String postalCode;
@@ -33,10 +34,10 @@ public class V6CustomerValidationModel {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-	public int getAge() {
+	public Integer getAge() {
 		return age;
 	}
-	public void setAge(int age) {
+	public void setAge(Integer age) {
 		this.age = age;
 	}
 	public String getPostalCode() {
