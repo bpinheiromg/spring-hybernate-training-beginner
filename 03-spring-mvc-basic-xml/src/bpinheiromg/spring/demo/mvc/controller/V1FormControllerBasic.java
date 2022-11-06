@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("/v1")
-public class V1_FormController_basic {
+public class V1FormControllerBasic {
 	
 	@RequestMapping("/form")
 	public String showForm() {

@@ -2,14 +2,14 @@ package bpinheiromg.spring.demo.mvc.model;
 
 import java.util.LinkedHashMap;
 
-public class V4_StudentModel {
+public class V4StudentModel {
 	
 	private String firstName;
 	private String lastName;
 	private String country;
 	private LinkedHashMap<String,String> countryOptions;
 	
-	public V4_StudentModel() {
+	public V4StudentModel() {
 		countryOptions = new LinkedHashMap<>();
 		countryOptions.put("BR", "Brazil");
 		countryOptions.put("CH", "Chile");

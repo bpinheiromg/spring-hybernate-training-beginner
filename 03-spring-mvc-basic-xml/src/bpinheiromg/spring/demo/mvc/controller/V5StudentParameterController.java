@@ -8,11 +8,11 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import bpinheiromg.spring.demo.mvc.model.V5_StudentFileModel;
+import bpinheiromg.spring.demo.mvc.model.V5StudentFileModel;
 
 @Controller
 @RequestMapping("/v5/student")
-public class V5_StudentParameterController {
+public class V5StudentParameterController {
 	
 	@Value("#{countryOptions}") 
 	private Map<String, String> fileCountryOptions;
@@ -25,7 +25,7 @@ public class V5_StudentParameterController {
 		
 	@RequestMapping("/form")
 	public String showModel(Model model) {
-		V5_StudentFileModel studentFileModel = new V5_StudentFileModel();
+		V5StudentFileModel studentFileModel = new V5StudentFileModel();
 		model.addAttribute("studentF", studentFileModel);
 		model.addAttribute("fileCountryOptions", fileCountryOptions);
 		model.addAttribute("fileProgrammingLanguages", fileProgrammingLanguages);
@@ -34,7 +34,7 @@ public class V5_StudentParameterController {
 	}
 	
 	@RequestMapping("/processForm")
-	public String processForm(@ModelAttribute("studentF") V5_StudentFileModel studentModel) {		
+	public String processForm(@ModelAttribute("studentF") V5StudentFileModel studentModel) {		
 		return "v5-student-confirmation";
 	}
 }
