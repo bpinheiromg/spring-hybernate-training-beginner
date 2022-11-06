@@ -1,6 +1,6 @@
 package bpinheiromg.spring.demo.mvc.model;
 
-public class V5_StudentFile {
+public class V5_StudentFileModel {
 	
 	private String firstName;
 	private String lastName;
@@ -9,7 +9,7 @@ public class V5_StudentFile {
 	private String preferredOS;
 	private String[] programmingLanguages;
 
-	public V5_StudentFile() {
+	public V5_StudentFileModel() {
 	}
 
 	public String getFirstName() {
