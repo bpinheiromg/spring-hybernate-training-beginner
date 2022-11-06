@@ -25,3 +25,5 @@ https://www.udemy.com/course/spring-hibernate-tutorial/
 * Section 13: Spring MVC - Request Params and Request Mappings
 * Section 14: Spring MVC - Form Tags and Data Binding
 * Section 15: Spring MVC Form Validation - Applying Built-In Validation Rules
+* Section 16: Spring MVC Form Validation - Validating Number Ranges and Regular Expressions
+* Section 17: Spring MVC Form Validation - Creating Custom Validation Rules
