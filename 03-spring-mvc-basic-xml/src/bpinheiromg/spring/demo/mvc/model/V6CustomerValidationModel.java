@@ -3,6 +3,7 @@ package bpinheiromg.spring.demo.mvc.model;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
 public class V6CustomerValidationModel {
@@ -16,7 +17,10 @@ public class V6CustomerValidationModel {
 	@Min(value=4, message="Must be at least 4 years old to play with Legos")
 	@Max(value=99, message="Must be no older than 99 years to play with Legos")
 	private int age;
-	
+
+	@Pattern(regexp="^[a-zA-Z0-9]{5}", message="only 5 characters/digits")
+	private String postalCode;
+
 	public String getFirstName() {
 		return firstName;
 	}
@@ -34,5 +38,11 @@ public class V6CustomerValidationModel {
 	}
 	public void setAge(int age) {
 		this.age = age;
+	}
+	public String getPostalCode() {
+		return postalCode;
+	}
+	public void setPostalCode(String postalCode) {
+		this.postalCode = postalCode;
 	}
 }
