@@ -21,7 +21,8 @@
 	<mvc:annotation-driven/>
 
 	<util:properties id="countryOptions" location="classpath:../countries.properties" /> 
-	<util:properties id="programmingLanguages" location="classpath:../programmingLanguage.properties" /> 
+	<util:properties id="programmingLanguages" location="classpath:../programmingLanguages.properties" /> 
+	<util:properties id="operatingSystems" location="classpath:../operatingSystems.properties" /> 
 
 	<!-- Step 5: Define Spring MVC view resolver -->
 	<bean

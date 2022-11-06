@@ -19,8 +19,8 @@
 			 Male <form:radiobutton path="gender" value="M"/>
 			 Female <form:radiobutton path="gender" value="F"/>
 			<br><br>
-			Preferred Programming Language:<br>
-			<form:radiobuttons path="preferredProgrammingLanguage" items="${fileProgrammingLanguages}"/>
+			Preferred Operating System: 
+			<form:radiobuttons path="preferredOS" items="${fileOperatingSystems}"/>
 			<br><br>
 			<input type="submit" />
 		</form:form>

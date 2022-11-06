@@ -19,6 +19,9 @@ public class StudentParameterController {
 	
 	@Value("#{programmingLanguages}") 
 	private Map<String, String> fileProgrammingLanguages;
+	
+	@Value("#{operatingSystems}") 
+	private Map<String, String> fileOperatingSystems;
 		
 	@RequestMapping("/form")
 	public String showModel(Model model) {
@@ -26,6 +29,7 @@ public class StudentParameterController {
 		model.addAttribute("studentF", studentFileModel);
 		model.addAttribute("fileCountryOptions", fileCountryOptions);
 		model.addAttribute("fileProgrammingLanguages", fileProgrammingLanguages);
+		model.addAttribute("fileOperatingSystems", fileOperatingSystems);
 		return "v5-student-form";
 	}
 	

@@ -10,7 +10,7 @@
 		<br><br>
 		Student gender: ${studentF.gender}
 		<br><br>
-		Preferred Programming Language: ${studentF.preferredProgrammingLanguage}
+		Preferred Operating System: ${studentF.preferredOS}
 		<br><br>
 		<a href="./form">back to form</a>
 	</body>

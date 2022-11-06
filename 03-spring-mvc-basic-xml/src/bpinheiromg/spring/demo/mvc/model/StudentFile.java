@@ -6,7 +6,8 @@ public class StudentFile {
 	private String lastName;
 	private String country;
 	private String gender;
-	private String preferredProgrammingLanguage;
+	private String preferredOS;
+	private String[] programmingLanguages;
 
 	public StudentFile() {
 	}
@@ -43,12 +44,19 @@ public class StudentFile {
 		this.gender = gender;
 	}
 
-	public String getPreferredProgrammingLanguage() {
-		return preferredProgrammingLanguage;
+	public String getPreferredOS() {
+		return preferredOS;
 	}
 
-	public void setPreferredProgrammingLanguage(String preferedProgramingLanguage) {
-		this.preferredProgrammingLanguage = preferedProgramingLanguage;
+	public void setPreferredOS(String preferredOS) {
+		this.preferredOS = preferredOS;
 	}
 
+	public String[] getProgrammingLanguages() {
+		return programmingLanguages;
+	}
+
+	public void setProgrammingLanguages(String[] programmingLanguages) {
+		this.programmingLanguages = programmingLanguages;
+	}
 }
