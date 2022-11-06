@@ -1,28 +1,28 @@
 package bpinheiromg.spring.demo.mvc.controller;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-@RequestMapping("/v3")
-public class FormControllerV3_paramBinding {
+@RequestMapping("/v2")
+public class V2_FormController_model {
 	
 	@RequestMapping("/form")
 	public String showForm() {
-		return "v3-form";
-	}	 
+		return "v2-form";
+	}	
 	
 	@RequestMapping("/processForm")
-	public String processForm(
-			@RequestParam("studentName") String studName, 
-			Model model) {
+	public String processForm(HttpServletRequest request, Model model) {
 		
-		String nameConverted = StringUtils.hasText(studName) ? studName.toUpperCase() : "Not Informed";
+		String nameParam = request.getParameter("studentName");
+		String nameConverted = StringUtils.hasText(nameParam) ? nameParam.toUpperCase() : "Not Informed";
 		model.addAttribute("name",nameConverted);
 		
-		return "v3-form-process";
+		return "v2-form-process";
 	}
 }

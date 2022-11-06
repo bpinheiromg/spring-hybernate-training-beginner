@@ -5,21 +5,21 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import bpinheiromg.spring.demo.mvc.model.Student;
+import bpinheiromg.spring.demo.mvc.model.V4_Student;
 
 @Controller
 @RequestMapping("/v4/student")
-public class StudentController {
+public class V4_StudentController {
 		
 	@RequestMapping("/form")
 	public String showModel(Model model) {
-		Student studentModel = new Student();
+		V4_Student studentModel = new V4_Student();
 		model.addAttribute("student", studentModel);
 		return "v4-student-form";
 	}
 	
 	@RequestMapping("/processForm")
-	public String processForm(@ModelAttribute("student") Student studentModel) {		
+	public String processForm(@ModelAttribute("student") V4_Student studentModel) {		
 		return "v4-student-confirmation";
 	}
 }
