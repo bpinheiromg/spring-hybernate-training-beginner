@@ -18,7 +18,7 @@ https://www.udemy.com/course/spring-hibernate-tutorial/
 * Section 9: Spring Configuration with Java Annotations - Bean Scopes and Lifecycle Methods
 * Section 10: Spring Configuration with Java Code (no xml)
 
-## Project '03-spring-mvc-basic-xml*' content:
+## Project '*03-spring-mvc-basic-xml*' content:
 *This project Require Tomcat9 configured with Eclipse or STS4.*
 * Section 11: Spring MVC - Building Spring Web Apps
 * Section 12: Spring MVC - Creating Controllers and Views
@@ -27,3 +27,7 @@ https://www.udemy.com/course/spring-hibernate-tutorial/
 * Section 15: Spring MVC Form Validation - Applying Built-In Validation Rules
 * Section 16: Spring MVC Form Validation - Validating Number Ranges and Regular Expressions
 * Section 17: Spring MVC Form Validation - Creating Custom Validation Rules
+
+## Project '*04-hibernate*' content:
+* Section 18: Introduction to Hibernate
+* Section 19: Setting Up Hibernate Development Environment
