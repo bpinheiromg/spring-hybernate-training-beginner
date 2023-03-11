@@ -31,3 +31,5 @@ https://www.udemy.com/course/spring-hibernate-tutorial/
 ## Project '*04-hibernate*' content:
 * Section 18: Introduction to Hibernate
 * Section 19: Setting Up Hibernate Development Environment
+* Section 20: Hibernate Configuration with Annotations
+* Section 21: Hibernate CRUD Features: Create, Read, Update and Delete
