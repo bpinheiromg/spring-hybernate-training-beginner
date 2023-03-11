@@ -33,3 +33,4 @@ https://www.udemy.com/course/spring-hibernate-tutorial/
 * Section 19: Setting Up Hibernate Development Environment
 * Section 20: Hibernate Configuration with Annotations
 * Section 21: Hibernate CRUD Features: Create, Read, Update and Delete
+* Section 22: Hibernate Advanced Mappings
