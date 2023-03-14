@@ -1,4 +1,4 @@
-package bpinheiromg.hibernate;
+package bpinheiromg.hibernate.basic.crud;
 
 import java.util.List;
 
@@ -9,7 +9,7 @@ import org.hibernate.cfg.Configuration;
 import bpinheiromg.hibernate.entity.Student;
 
 
-public class QueryStudentDemo {
+public class StudentQuery {
 
 	public static void main(String[] args) {
 

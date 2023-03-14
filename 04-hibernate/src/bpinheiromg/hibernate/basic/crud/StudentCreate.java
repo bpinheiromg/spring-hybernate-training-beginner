@@ -1,4 +1,4 @@
-package bpinheiromg.hibernate;
+package bpinheiromg.hibernate.basic.crud;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -6,7 +6,7 @@ import org.hibernate.cfg.Configuration;
 
 import bpinheiromg.hibernate.entity.Student;
 
-public class CreateStudentDemo {
+public class StudentCreate {
 
 	public static void main(String[] args) {
 
